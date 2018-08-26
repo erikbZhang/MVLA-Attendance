@@ -5,23 +5,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-101538259-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LandoMedia</title>
+	<title>Attendance</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Social Media Marketing and Advertisement" />
-	<meta name="keywords" content="free money, cheap advertising, social media management, social media advertising, startup, grow business, responsive" />
-	<meta name="author" content="EZ" />
+
 
   <!--
 	//////////////////////////////////////////////////////
@@ -48,8 +36,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	
 
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
@@ -96,15 +83,15 @@
 	  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/paidpost.png);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(sdsd.png);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<h1 class="to-animate">Sign in and Record Attendance</h1>
-							<h2 class="to-animate">-Thanks for making life easier - Erik</h2>
+							<h1 class="to-animate"><span>Sign in and Record Attendance</span></h1>
+							<h2 class="to-animate"></h2>
 							<div class="call-to-action">
 						</div>
 					</div>
@@ -115,45 +102,20 @@
 	</section>
 	<section id="fh5co-explore" data-section="explore">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Who are we?</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                            <h3>Make money for posting on your Instagram.</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                            <h3>Once you sign up, we'll email you with offers. Make money for doing almost nothing!
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fh5co-explore">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-push-5 to-animate-2">
-						<img class="img-responsive" src="images/phone.jpg" alt="work">
-					</div>
-					<div class="col-md-4 col-md-pull-8 to-animate-2">
-						<div class="mt">
-							<h3>Post normal photos for money!</h3>
-							<ul class="list-nav">
-								<li><i class="icon-check2"></i>We pay about $1 for every 100 followers!</li>
-								<li><i class="icon-check2"></i>Don't post anything you're uncomfortable with!</li>
-								<li><i class="icon-check2"></i>Post advertisements that are similar to what is normally posted!</li>
-								<li><i class="icon-check2"></i>Only 5 minutes of work!</li>
-								<li><i class="icon-check2"></i>Post for just two hours, and you can delete the photo after that!</li>
-							</ul>
-						</div>
-					</div>
-
-				</div>
-			</div>
+            <div class="col-md-12 to-animate">
+			<h2 align="center">Sign In - Returning Members</h2>
+			<form class="contact-form">
+				<fieldset class="form-group">
+					<label for="SId" class="sr-only">School ID - 5 Digit Number</label>
+					<input type="number" name="SId" class="form-control" id="ajpat" required placeholder="School ID - Example: 12345"></input>
+				</fieldset>
+				<center>
+				<button class="mainButton" id="attendanceButton">Record Attendance</button><br><br><br>
+				</center>
+			</form>
+			
 		</div>
+	</section>
  
 	<section id="fh5co-services" data-section="services">
 		<div class="col-md-12 to-animate">
@@ -162,14 +124,14 @@
 		<fieldset class="form-group" align="center">
 			<p><br><br>What school do you go to?</p>
 				<select id="school" name="payment" required>
-		          <option id="LAHS" selected>LAHS</option>
-		          <option id="MVHS">MVHS</option>
+		          <option value="LAHS" selected>LAHS</option>
+		          <option value="MVHS">MVHS</option>
 		        </select>
 		</fieldset>
-		<fieldset class="form-group">
-			<label for="email" class="sr-only">Email - Best way to Contact You!<label>
-			<input type="email" name="email" class="form-control" id="registerEmail" placeholder="Email" required>
-		</fieldset>
+			<fieldset class="form-group">
+				<label for="email" class="sr-only">Email - Best way to Contact You!</label>
+				<input type="email" name="email" class="form-control" id="registerEmail" placeholder="Email" required>
+			</fieldset>
 			<fieldset class="form-group">
 				<label for="name" class="sr-only">Name</label>
 				<input type="string" name="name" class="form-control" id="registerName" placeholder="Full Name" required>
@@ -179,7 +141,10 @@
 				<input type="number" name="SId" class="form-control" id="schoolID" required placeholder="School ID - Example: 12345"></input>
 			</fieldset>
 		</form>
-		<button class="mainButton" id="register">Register</button><br>
+		<center>
+		<button class="mainButton" id="register">Register</button><br><br><br>
+		<p>Written by Arjun Patrawala & Erik Zhang</p>
+		</center>
 		</div>
 		<div style="display:none;" id="thankyou_message" align="center">
 			<h2><em>Thanks</em> for joining!
@@ -199,46 +164,60 @@
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
 	<script>
 	  // Initialize Firebase
-	  var config = {
-		apiKey: "AIzaSyBR6tFVgpEaJpk6IllwGDPUpgeO19ZKnZs",
-		authDomain: "mvhs-attendance.firebaseapp.com",
-		databaseURL: "https://mvhs-attendance.firebaseio.com",
-		projectId: "mvhs-attendance",
-		storageBucket: "mvhs-attendance.appspot.com",
-		messagingSenderId: "1031314748817"
-	  };
-	  firebase.initializeApp(config);
-	</script>
-	<script>
-			var registerButton = document.getElementById("register");
-			var rName = document.getElementById("registerName");
-			var rEmail = document.getElementById("registerEmail");
-			registerButton.onclick = function(){firebase.auth().createUserWithNameandEmail(rName.value, rEmail.value).catch(function(error) {
-					var errorCode = error.code;
-					var errorMessage = error.message;
-					alert(errorMessage);
-					// TODO: ADD ERROR PROCESSING
-				});
-			}
+	    var config = {
+		  apiKey: "AIzaSyBR6tFVgpEaJpk6IllwGDPUpgeO19ZKnZs",
+		  authDomain: "mvhs-attendance.firebaseapp.com",
+		  databaseURL: "https://mvhs-attendance.firebaseio.com",
+		  projectId: "mvhs-attendance",
+		  storageBucket: "mvhs-attendance.appspot.com",
+	   	  messagingSenderId: "1031314748817"
+	    };
+	    firebase.initializeApp(config);
+		var dateObject = new Date();
+		function writeUserData(userId, name, email, schoolID, school) {
+		  firebase.database().ref('users/' + userId).set({
+			username: name,
+			email: email,
+			schoolID: schoolID,
+			school: school,
+			attendanceNum: 1,
+			dates: [(dateObject.getMonth() + 1) + '/' + dateObject.getDate() + '/' + dateObject.getFullYear()]
+		  });
+		}
+		var registerButton = document.getElementById("register");
+		
+		registerButton.onclick = function(){
+			var rEmail = document.getElementById("registerEmail").value;
+			var rName = document.getElementById("registerName").value;
+			var school = document.getElementById("school").value;
+			var SID = document.getElementById("schoolID").value;
+			writeUserData(SID, rName, rEmail, SID, school);
+		}
+		function recordAttendance(userId){
+			return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+			var currentAttendance = snapshot.val().attendanceNum;
+			var currentDates = snapshot.val().dates;
+			currentDates.push((dateObject.getMonth() + 1) + '/' + dateObject.getDate() + '/' + dateObject.getFullYear());
+			var updates = {};
+			  updates['/users/' + userId + '/attendanceNum'] = currentAttendance + 1;
+			  updates['/users/' + userId + '/dates'] = currentDates;
 
-			firebase.auth().onAuthStateChanged(function(user){
-				if (user) {
-					var ref = firebase.database().ref();
-					var registerName = document.getElementById("registerName").value;
-					var registerEmail = document.getElementById("registerEmail").value;
-					var school = document.getElementById("school").checked;
-					var schoolID = document.getElementById("schoolID").value;
-					firebase.database().ref("users/" + user.uid).set({
-						registerName : registerName,
-						registerEmail: registerEmail,
-						school: school,
-						schoolID : schoolID
-					}).then(function() {
-						window.location.replace("attendance.html");
-					});
-				}
-			});
-		</script>
+			return firebase.database().ref().update(updates);
+
+		});
+			
+		}
+		
+		
+		var attendanceButton = document.getElementById("attendanceButton");
+		
+		attendanceButton.onclick = function(e){
+			e.preventDefault();
+			var loginUserID = document.getElementById("ajpat").value;
+			recordAttendance(loginUserID);
+		}
+	</script>
+	
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
