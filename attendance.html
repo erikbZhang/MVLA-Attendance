@@ -224,15 +224,17 @@
 			firebase.auth().onAuthStateChanged(function(user){
 				if (user) {
 					var ref = firebase.database().ref();
-					var famNum = document.getElementById("familyNum").value;
-					var youngChild = document.getElementById("youngChildYes").checked;
-					var pets = document.getElementById("petsYes").checked;
+					var registerName = document.getElementById("registerName").value;
+					var registerEmail = document.getElementById("registerEmail").value;
+					var school = document.getElementById("school").checked;
+					var schoolID = document.getElementById("schoolID").value;
 					firebase.database().ref("users/" + user.uid).set({
-						famNum: famNum,
-						youngChild: youngChild,
-						pets: pets
+						registerName : registerName,
+						registerEmail: registerEmail,
+						school: school,
+						schoolID : schoolID
 					}).then(function() {
-						window.location.replace("tips.html");
+						window.location.replace("attendance.html");
 					});
 				}
 			});
