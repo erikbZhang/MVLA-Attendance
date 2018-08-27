@@ -192,7 +192,9 @@
 			var school = document.getElementById("school").value;
 			var SID = document.getElementById("schoolID").value;
 			writeUserData(SID, rName, rEmail, SID, school);
+			setTimeout(location.reload.bind(location), 100);
 		}
+
 		function recordAttendance(userId){
 			return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
 			var currentAttendance = snapshot.val().attendanceNum;
@@ -215,6 +217,7 @@
 			e.preventDefault();
 			var loginUserID = document.getElementById("ajpat").value;
 			recordAttendance(loginUserID);
+			setTimeout(location.reload.bind(location), 100);
 		}
 	</script>
 	
